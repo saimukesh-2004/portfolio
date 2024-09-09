@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sai Kushal - A passionate Frontend Developer from Kurnool.">
+  <meta name="keywords" content="Portfolio, Frontend Developer, Sai Kushal, HTML, CSS, JavaScript">
+  <title>My Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="navbar">
+    <div class="logo"><a href="#">Portfolio</a></div>
+    <ul class="menu">
+       <li><a href="#home">Home</a></li>
+       <li><a href="#about">About</a></li>
+       <li><a href="#skills">Skills</a></li>
+    
+       <li><a href="#contact">Contact</a></li>
+      <div class="cancel-btn">
+        <i class="fas fa-times"></i>
+      </div>
+    </ul>
+    <div class="media-icons">
+      <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/codemafia" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+</nav>
+
+<section class="home" id="home">
+  <div class="home-content" id="section1">
+    <div class="text" id="aboutme">
+      <div class="text-one">Hello</div>
+      <div class="text-two">I'm Sathvika</div>
+      <div class="text-three">-Frontend Developer</div>
+      <div class="class"><div class="text-four">From warangal </div>
+    <div>
+      <img src='minnu1.jpg' alt="Profile Picture of Sathvika"  id="profileimg">
+    </div></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="content">
+    <div class="title">
+      <span>About me</span>
+    </div>
+    <div class="about-details">
+      <div class="left">
+        <img src="minnu2.jpg" alt="img">
+      </div>
+      <div class="right">
+        <div class="topic">Myself</div>
+        <p>
+      I am a passionate frontend developer with a strong foundation in web development. Currently, I am pursuing my Computer Science Engineering at kamala Institute of technology and science. I recently completed a one-month internship in web development at Bharat Intern. I am driven by a love for continuous learning and always eager to embrace new challenges in the tech world.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="content">
+    <div class="title"><span>My Skills</span></div>
+    <div class="skills-details">
+      <div class="text">
+        <div class="topic">Skills Reflect Our Knowledge</div>
+        <p>I have a solid understanding of various web development technologies and tools.Currently expanding skillset into backend development,with a focus on enhancing full-stack capabilities. Below is a summary of my skills:</p>
+        <div class="experience">
+          <!--<div class="num">Intern at Bharat Intern</div>-->
+          <div class="exp">
+            
+            <h3> Web Development</h3>  
+           <h5>   May 2024 -June 2024</h5>
+           <p>Developed and maintaines web applications using HTML,CSS ,JavaScript and frontend technologies.Collaborated with a team to design responsive and user-friendly interfaces.Worked on improving website performance and optimizing user experience.</p>
+          </div>
+        </div>
+      </div>
+      <div class="boxes">
+        <div class="box">
+          <div class="topic">HTML</div>
+        </div>
+        <div class="box">
+          <div class="topic">CSS</div>
+        </div>
+        <div class="box">
+          <div class="topic">JavaScript</div>
+        </div>
+        <div class="box">
+          <div class="topic">C</div>
+        </div>
+        <div class="box">
+          <div class="topic">JAVA</div>
+        </div>
+        <div class="box">
+          <div class="topic">SQL</div>
+        </div>
+        <div class="box">
+          <div class="topic">Bootstrap</div>
+        </div>
+        
+        <div class="box">
+          <div class="topic">GitHub</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+      <h2>Contact</h2>
+      <p>Feel free to get in touch with me for any web development projects or collaboration opportunities!</p>
+      <form action="#" method="post">
+        <input type="text" placeholder="Enter your name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+      <p>
+         &copy; 2024 sathvika vaidyula
+      </p>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const cancelBtn = document.querySelector('.cancel-btn');
+  const menu = document.querySelector('.menu');
+  
+  menuBtn.addEventListener('click', () => {
+    menu.classList.add('active');
+  });
+  
+  cancelBtn.addEventListener('click', () => {
+    menu.classList.remove('active');
+  });
+</script>
+</body>
+</html>
